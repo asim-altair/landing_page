@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+body{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.80), rgba(10, 10, 10, 0.80)),
+    url('./props/pexels-photo-373543.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    width: 80%;
+    color: white;
+    margin: auto;
+}
+.navigation{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+}
+.logo{
+    flex: 1;
+}
+.js-logo{
+    color: white;
+    transition: .5s ease;
+}
+.js-logo:hover{
+    color: yellow;
+    background-color: black;
+}
+.menu{
+    margin-top: 10px;
+}
+.menu-item{
+    display: inline;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    transition: .5s ease;
+}
+.menu-responsive{
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#menu2{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 140, 255);
+    opacity: 95%;
+    z-index: 30;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    transition: all 0s;
+}
+.btn-xmark{
+    color: white;
+    position: relative;
+    top: 2rem;
+    left: 90%;
+    cursor: pointer;
+}
+.btn-xmark:hover{
+    color: red;
+}
+.menu-item:hover{
+    background-color: white;
+    color: black;
+
+}
+.btn-bars{
+    position: relative;
+    left: 70%;
+    top: .8rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+.btn-bars:hover{
+    color: rgb(109, 217, 253);
+}
+@media screen and (max-width: 770px) {
+    .menu{
+        visibility: hidden;
+    }
+    .btn-bars{
+        visibility: visible;
+    }
+}
+.main-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main-heading h1{
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.main-heading h1 span{
+    color: aqua;
+}
+.text{
+    font-family: cursive;
+    font-size: 20px;
+}
+.btn1,.btn2{
+    margin: 10px;
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.btn2{
+    background-color: white;
+    color: black;
+}
+.btn1:hover{
+    background-color: white;
+    color: black;
+}
+.icons{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-bottom: 1px solid white;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.icon{
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.icon:hover{
+    color: rgb(109, 217, 253);
+}
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skill-box{
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+.skill-box:hover{
+    background-color: white;
+    color: black;
+}
+.review-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.review-box{
+    border: solid 1px white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+.review-box:hover{
+    background-color: white;
+    color: black;
+}
+.star{
+    color: yellow;
+}
+.review-text{
+    margin-top: 10px;
+    font-family: cursive;
+    font-size: 15px;
+}
+.footer{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer p{
+    margin-top: 20px;
+}
+.main-holder{
+    position: relative;
+    top: 50rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
