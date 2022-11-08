@@ -106,32 +106,25 @@ body{
     }
 }
 .main-heading{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    position: relative;
+    top: 300px;
 }
 .main-heading h1{
-    font-size: 60px;
-    letter-spacing: 5px;
+    font-size: 50px;
+    letter-spacing: 3px;
 }
 .main-heading h1 span{
     color: aqua;
 }
-.text{
-    font-family: cursive;
-    font-size: 20px;
-}
 .btn1,.btn2{
     margin: 10px;
-    padding: 10px 20px;
+    padding: 10px;
     background: none;
     border: 1px solid white;
     color: white;
-    font-size: 15px;
     cursor: pointer;
     transition: .5s ease;
 }
@@ -143,25 +136,17 @@ body{
     background-color: white;
     color: black;
 }
-.icons{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-bottom: 1px solid white;
-    width: 200px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 .icon{
     color: white;
-    margin: 10px;
     cursor: pointer;
     transition: .5s ease;
+    margin: 10px;
 }
 .icon:hover{
-    color: rgb(109, 217, 253);
+    color: rgb(100, 172, 255);
+}
+@media screen and (max-width:) {
+    
 }
 .skill-container{
     display: flex;
